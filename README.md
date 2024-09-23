@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9e9d5940-f21a-439f-b05f-095a612d8eb0)## Guide to running the Ansible script:
+## Guide to running the Ansible script:
 
 ### Step 1: 
 
