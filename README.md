@@ -9,11 +9,15 @@ Run the update and install Ansible:
 
 "sudo apt install ansible -y"
 
+__________________________________________
+
 Step 2: Download the git repository with the following commands
 
 "sudo apt install git -y"
 
 "git clone https://github.com/ErinFlyingSkyRocket/custom-ansible-harden.git"
+
+__________________________________________
 
 Step 3: Insert your SSH key to the
 ##### Change the directory into the downloaded folder and make the required changes.
