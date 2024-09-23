@@ -1,0 +1,12 @@
+---
+- name: Apply system hardening roles with custom settings
+  hosts: aws
+  become: yes
+
+# Optional (Below)
+#  vars:
+#    hardening_ssh_permit_root_login: 'no'
+#    hardening_ssh_password_authentication: 'no'
+
+  roles:
+    - konstruktoid.hardening
