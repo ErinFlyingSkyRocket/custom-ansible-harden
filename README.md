@@ -12,7 +12,7 @@ Run the update and install Ansible:
 
 __________________________________________
 
-### Step 2: Download the git repository with the following commands
+### Step 2: Clone the git repository with the following commands
 
 "sudo apt install git -y"
 
