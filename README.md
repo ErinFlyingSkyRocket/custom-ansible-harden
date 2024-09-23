@@ -5,6 +5,7 @@ Step 1:
 Do the appropriate updates and ensure Ansible is installed in the environment to run the script
 
 Run the update and install Ansible:
+
 "sudo apt update"
 
 "sudo apt install ansible -y"
