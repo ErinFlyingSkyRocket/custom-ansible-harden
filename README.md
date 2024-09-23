@@ -1,8 +1,8 @@
-Credits to konstruktoid: 
+Source codes referenced from konstruktoid: 
 
 Ansible Role for Server Hardening:
 
-https://github.com/konstruktoid/ansible-role-hardening?tab=readme-ov-file
+https://github.com/konstruktoid/ansible-role-hardening
 
 https://galaxy.ansible.com/ui/standalone/roles/konstruktoid/hardening
 
