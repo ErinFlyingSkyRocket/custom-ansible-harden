@@ -21,7 +21,7 @@ __________________________________________
 __________________________________________
 
 ### Step 3: Insert your SSH key to the
-##### Change the directory into the downloaded folder and make the required changes.
+##### Change the directory into the downloaded git pack (custom-ansible-harden) and make the required changes.
 
 "cd ~/custom-ansible-harden"
 
