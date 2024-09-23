@@ -25,7 +25,7 @@ Step 3: Insert your SSH key to the
 
 "cd ~/custom-ansible-harden"
 
-##### Paste your SSH key in the <<Your desired key name>>.pem file and ensure permission is set to 400, else it won't run
+##### Paste your SSH key in the <Your desired key name>.pem file and ensure permission is set to 400, else it won't run
 
 "nano .ssh/testlab.pem"
 
