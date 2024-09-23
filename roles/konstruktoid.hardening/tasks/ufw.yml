@@ -71,34 +71,34 @@
     - ufw
     - M1037
 
-- name: Enable UFW and set default deny incoming
-  become: true
-  community.general.ufw:
-    state: enabled
-    direction: incoming
-    policy: deny
-    log: true
-    logging: low
-    comment: ansible managed
-  tags:
-    - ufw
-    - CIS-UBUNTU2004-3.5.1.7
-    - D3-ITF
-    - M1037
+#- name: Enable UFW and set default deny incoming
+#  become: true
+#  community.general.ufw:
+#    state: enabled
+#    direction: incoming
+#    policy: deny
+#    log: true
+#    logging: low
+#    comment: ansible managed
+#  tags:
+#    - ufw
+#    - CIS-UBUNTU2004-3.5.1.7
+#    - D3-ITF
+#    - M1037
 
-- name: Enable UFW and set default deny outgoing
-  become: true
-  community.general.ufw:
-    state: enabled
-    direction: outgoing
-    policy: deny
-    log: true
-    logging: low
-    comment: ansible managed
-  tags:
-    - ufw
-    - CIS-UBUNTU2004-3.5.1.7
-    - M1037
+#- name: Enable UFW and set default deny outgoing
+#  become: true
+#  community.general.ufw:
+#    state: enabled
+#    direction: outgoing
+#    policy: deny
+#    log: true
+#    logging: low
+#    comment: ansible managed
+#  tags:
+#    - ufw
+#    - CIS-UBUNTU2004-3.5.1.7
+#    - M1037
 
 - name: Stat UFW rules
   become: true

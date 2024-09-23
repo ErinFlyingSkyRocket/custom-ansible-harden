@@ -1,5 +1,5 @@
 [aws]
-54.179.110.154 ansible_user=ubuntu ansible_ssh_private_key_file=.ssh/testlab.pem
+<<Insert Instance IP Address>> ansible_user=ubuntu ansible_ssh_private_key_file=.ssh/testlab.pem
 
 # Change your the IP address, username, password, SSH key as required.
 # Remeber to create your SSH pem key to connect with permission 400
