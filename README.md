@@ -1,3 +1,12 @@
+Credits to konstruktoid: 
+
+Ansible Role for Server Hardening:
+
+https://github.com/konstruktoid/ansible-role-hardening?tab=readme-ov-file
+
+https://galaxy.ansible.com/ui/standalone/roles/konstruktoid/hardening
+
+
 ## Guide to running the Ansible script:
 
 ### Step 1: 
