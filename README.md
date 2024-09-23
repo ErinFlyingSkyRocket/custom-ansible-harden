@@ -1,4 +1,4 @@
-## Guide to running the Ansible script:
+![image](https://github.com/user-attachments/assets/9e9d5940-f21a-439f-b05f-095a612d8eb0)## Guide to running the Ansible script:
 
 ### Step 1: 
 
@@ -30,3 +30,10 @@ __________________________________________
 "nano .ssh/testlab.pem"
 
 "sudo chmod 400 .ssh/testlab.pem"
+
+__________________________________________
+
+### Step 4: Running the script
+##### Run the harden.yml with sudo to ensure it has permission to run all tasks
+"sudo ansible-playbook -i inventory harden.yml"
+
