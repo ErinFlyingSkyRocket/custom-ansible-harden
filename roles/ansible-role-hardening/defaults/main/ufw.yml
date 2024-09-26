@@ -1,0 +1,12 @@
+---
+manage_ufw: true
+
+ufw_outgoing_traffic:
+  - 22
+  - 53
+  - 80
+  - 123
+  - 443
+  - 853
+
+ufw_rate_limit: false

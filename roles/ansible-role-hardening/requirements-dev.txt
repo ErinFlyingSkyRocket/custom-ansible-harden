@@ -1,0 +1,6 @@
+ansible
+ansible-lint
+jmespath
+molecule-plugins[docker]
+molecule-plugins[vagrant]
+passlib
