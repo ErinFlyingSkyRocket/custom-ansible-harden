@@ -40,9 +40,6 @@ __________________________________________
 
 "sudo chmod 400 .ssh/testlab.pem"
 
-##### Change the IP address of the line to the instance target
-"sudo nano inventory"
-
 __________________________________________
 
 ### Step 4: Running the script
