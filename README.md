@@ -50,26 +50,26 @@ __________________________________________
 "sudo ansible-playbook -i inventory harden.yml"
 __________________________________________
 ### Step 5: nftables Firewall implementation
-a) Check if firewall is configure
+#### a) Check if firewall is configure
 "bash isFirewall.bash"
-b) Install nftables
+#### b) Install nftables
 "apt install nftables"
-c) Disabled ufw if exist (Skip if doesn't exist)
+#### c) Disabled ufw if exist (Skip if doesn't exist)
 "apt purge ufw"
-d) Ensure no iptables rules exist (Skip if doesn't exist)
+#### d) Ensure no iptables rules exist (Skip if doesn't exist)
 "iptables -L"
 "ip6tables -L"
-e) Flush iptables if rules exist (Skip if it's empty)
+#### e) Flush iptables if rules exist (Skip if it's empty)
 "iptables -F"
 "ip6tables -F"
-f) Save the script for nftables as /etc/nftables.rules
-  ### Run the following command to load the file into nftables
+#### f) Save the script for nftables as /etc/nftables.rules
+  ##### Run the following command to load the file into nftables
   "nft -f /etc/nftables.rules"
-  ### Make these rules permanent
+  ##### Make these rules permanent
   "nft list ruleset | sudo tee /etc/nftables.rules > /dev/null" 
-  ### Add following line to /etc/nftables.conf
+  ##### Add following line to /etc/nftables.conf
   "include "/etc/nftables.rules"" 
-g) Ensure nftables is enabled from boot
+#### g) Ensure nftables is enabled from boot
 "systemctl enable nftables"
-h) 4.3.4 to 4.3.10 is verification of nftables
+#### h) 4.3.4 to 4.3.10 is verification of nftables
 
