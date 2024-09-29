@@ -242,13 +242,13 @@
   tags:
     - remove_users
 
-- name: Remove suid/sgid permissions
-  ansible.builtin.import_tasks:
-    file: suid.yml
-  when:
-    - suid_sgid_permissions | bool
-  tags:
-    - suid_sgid_permissions
+#- name: Remove suid/sgid permissions
+#  ansible.builtin.import_tasks:
+#    file: suid.yml
+#  when:
+#    - suid_sgid_permissions | bool
+##  tags:
+#    - suid_sgid_permissions
 
 - name: Configure compiler permissions
   ansible.builtin.import_tasks:

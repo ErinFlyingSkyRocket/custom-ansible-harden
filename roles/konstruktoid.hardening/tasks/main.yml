@@ -106,9 +106,9 @@
 - name: Manage users
   ansible.builtin.include_tasks: users.yml
 
-- name: Remove suid/sgid permissions
-  ansible.builtin.include_tasks: suid.yml
-  when: suid_sgid_permissions | bool
+#- name: Remove suid/sgid permissions
+#  ansible.builtin.include_tasks: suid.yml
+#  when: suid_sgid_permissions | bool
 
 - name: Configure compiler permissions
   ansible.builtin.include_tasks: compilers.yml
