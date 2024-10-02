@@ -22,8 +22,8 @@ table inet filter {
 		ip protocol tcp ct state established accept 
 		ip protocol udp ct state established accept 
 		
-		# Accept port 22(SSH) traffic from anywhere 
-		tcp dport {22, 22222, 443, 25565} accept 
+		# Accept port(s) traffic from anywhere 
+		tcp dport {22, 80, 1389, 4444, 22222, 25565} accept 
 		} 
 		
 	# Base chain for hook forward named forward (Filters forwarded network packets) 
