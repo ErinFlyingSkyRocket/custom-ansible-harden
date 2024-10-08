@@ -22,8 +22,8 @@ table inet filter {
 		ip protocol tcp ct state established accept 
 		ip protocol udp ct state established accept 
 		
-		# Accept port(s) traffic from anywhere 
-		tcp dport {22, 80, 1389, 4444, 22222, 25565} accept 
+		# Accept ports traffic from anywhere 
+		tcp dport {22, 80, 1389, 4444, 25565, 33333} accept 
 		} 
 		
 	# Base chain for hook forward named forward (Filters forwarded network packets) 
@@ -31,7 +31,7 @@ table inet filter {
 		type filter hook forward priority 0; policy drop; 
 		} 
 		
-	# Base chain for hook output named output (Filters outbount network packets) 
+	# Base chain for hook output named output (Filters outbound network packets) 
 	chain output { 
 		type filter hook output priority 0; policy drop; 
 		
