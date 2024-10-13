@@ -23,7 +23,7 @@ table inet filter {
 		ip protocol udp ct state established accept 
 		
 		# Accept ports traffic from anywhere 
-		tcp dport {22, 80, 1389, 4444, 25565, 33333} accept 
+		tcp dport {80, 1389, 4444, 25565, 33333} accept 
 		} 
 		
 	# Base chain for hook forward named forward (Filters forwarded network packets) 
