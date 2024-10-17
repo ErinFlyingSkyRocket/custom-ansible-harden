@@ -16,7 +16,7 @@ Disabled UFW: UFW was disabled to avoid inadvertently blocking access to the ser
 
 **Service Optimization**: Unused services like vsftpd, rsync, and apache2 were initially disabled for security reasons, though apache2 was later manually installed to support the web server functionality.
 
-##The rest of the hardening measures implemented by Konstruktoid in the untouched areas remain robust for securing the server. These include:
+## The rest of the hardening measures implemented by Konstruktoid in the untouched areas remain robust for securing the server. These include:
 
 **SSH Configuration Hardening**: Disabling root login and enforcing key-based authentication strengthens access control.
 
