@@ -10,33 +10,33 @@ https://galaxy.ansible.com/ui/standalone/roles/konstruktoid/hardening
 
 This repository contains a customized version of the Konstruktoid Ubuntu Hardening Ansible role. Key modifications include:
 
-###Disabled UFW###: UFW was disabled to avoid inadvertently blocking access to the server instance, ensuring the CTF environment remains accessible.
+Disabled UFW: UFW was disabled to avoid inadvertently blocking access to the server instance, ensuring the CTF environment remains accessible.
 
-###Switched to Chrony###: We disabled timesyncd in favor of Chrony for time synchronization, which offers better stability and flexibility.
+**Switched to Chrony**: We disabled timesyncd in favor of Chrony for time synchronization, which offers better stability and flexibility.
 
-###Service Optimization###: Unused services like vsftpd, rsync, and apache2 were initially disabled for security reasons, though apache2 was later manually installed to support the web server functionality.
+**Service Optimization**: Unused services like vsftpd, rsync, and apache2 were initially disabled for security reasons, though apache2 was later manually installed to support the web server functionality.
 
 ##The rest of the hardening measures implemented by Konstruktoid in the untouched areas remain robust for securing the server. These include:
 
-###SSH Configuration Hardening###: Disabling root login and enforcing key-based authentication strengthens access control.
+**SSH Configuration Hardening**: Disabling root login and enforcing key-based authentication strengthens access control.
 
-###Audit Logs and File Integrity###: Construction of robust logging configurations and ensuring file integrity checks are in place.
+**Audit Logs and File Integrity**: Construction of robust logging configurations and ensuring file integrity checks are in place.
 
-###Package Management###: Ensuring only necessary packages are installed, reducing attack vectors by minimizing the software footprint.
+**Package Management**: Ensuring only necessary packages are installed, reducing attack vectors by minimizing the software footprint.
 
-###Sysctl Hardening###: Kernel parameters were optimized to secure networking and prevent IP forwarding, spoofing, and other potential threats.
+**Sysctl Hardening**: Kernel parameters were optimized to secure networking and prevent IP forwarding, spoofing, and other potential threats.
 
-###Security Updates###: Regular updates were enforced for all installed packages to patch known vulnerabilities.
+**Security Updates**: Regular updates were enforced for all installed packages to patch known vulnerabilities.
 
-###SUID Blocklist###: We blocked unused commands with the SUID/SGID permissions to limit potential privilege escalation risks. This ensures that only the necessary binaries retain these elevated privileges.
+**SUID Blocklist**: We blocked unused commands with the SUID/SGID permissions to limit potential privilege escalation risks. This ensures that only the necessary binaries retain these elevated privileges.
 
-###Disable IPv6###: Since IPv6 was not in use for our environment, we disabled it entirely to reduce attack surfaces that could be exploited if left enabled.
+**Disable IPv6**: Since IPv6 was not in use for our environment, we disabled it entirely to reduce attack surfaces that could be exploited if left enabled.
 
-###Encryption###: We enforced encryption for data transmissions, ensuring secure communication between services, further minimizing risks from eavesdropping or data tampering.
+**Encryption**: We enforced encryption for data transmissions, ensuring secure communication between services, further minimizing risks from eavesdropping or data tampering.
 
-###Password Enforcement###: Password strength was strictly enforced by utilizing strong password policies that require complex inputs. We also adjusted the default MOTD (Message of the Day) to inform users of the login policies and security expectations.
+**Password Enforcement**: Password strength was strictly enforced by utilizing strong password policies that require complex inputs. We also adjusted the default MOTD (Message of the Day) to inform users of the login policies and security expectations.
 
-###User Umask Adjustments###: We configured the user umask to ensure that newly created files and directories have stricter default permissions, which helps prevent unauthorized access.
+**User Umask Adjustments**: We configured the user umask to ensure that newly created files and directories have stricter default permissions, which helps prevent unauthorized access.
 
 ## Guide to running the Ansible script:
 
