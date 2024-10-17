@@ -10,7 +10,7 @@ https://galaxy.ansible.com/ui/standalone/roles/konstruktoid/hardening
 
 ## Summary of Modified Commented Out Code
 
-Disabled UFW: UFW was disabled to avoid inadvertently blocking access to the server instance, ensuring the CTF environment remains accessible.
+**Disabled UFW**: UFW was disabled to avoid inadvertently blocking access to the server instance, ensuring the CTF environment remains accessible.
 
 **Switched to Chrony**: We disabled timesyncd in favor of Chrony for time synchronization, which offers better stability and flexibility.
 
