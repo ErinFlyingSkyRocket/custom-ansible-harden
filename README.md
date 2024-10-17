@@ -6,6 +6,15 @@ https://github.com/konstruktoid/ansible-role-hardening
 
 https://galaxy.ansible.com/ui/standalone/roles/konstruktoid/hardening
 
+## Summary of Hardening Code ###
+
+This repository contains a customized version of the Konstruktoid Ubuntu Hardening Ansible role. Key modifications include:
+
+Disabled UFW: UFW was disabled to avoid inadvertently blocking access to the server instance, ensuring the CTF environment remains accessible.
+
+Switched to Chrony: We disabled timesyncd in favor of Chrony for time synchronization, which offers better stability and flexibility.
+
+Service Optimization: Unused services like vsftpd, rsync, and apache2 were initially disabled for security reasons, though apache2 was later manually installed to support the web server functionality.
 
 ## Guide to running the Ansible script:
 
