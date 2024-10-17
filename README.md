@@ -1,3 +1,5 @@
+This repository contains a customized version of the Konstruktoid Ubuntu Hardening Ansible role.
+
 Source codes referenced from konstruktoid: 
 
 Ansible Role for Server Hardening:
@@ -6,9 +8,7 @@ https://github.com/konstruktoid/ansible-role-hardening
 
 https://galaxy.ansible.com/ui/standalone/roles/konstruktoid/hardening
 
-## Summary of Hardening Code ###
-
-This repository contains a customized version of the Konstruktoid Ubuntu Hardening Ansible role. Key modifications include:
+## Summary of Modified Commented Out Code
 
 Disabled UFW: UFW was disabled to avoid inadvertently blocking access to the server instance, ensuring the CTF environment remains accessible.
 
